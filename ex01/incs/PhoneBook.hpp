@@ -4,16 +4,20 @@
 #define MAX_CONTACTS 8
 
 #include "Contact.hpp"
+#include <iomanip>
+#include <cstdlib>
 
 class PhoneBook
 {
 	private:
-		Contact contacts[MAX_CONTACTS];
-
+	
 	public:
+		Contact contacts[MAX_CONTACTS];
 		int AddContact(int id);
 		int CheckPhoneNumber(std::string phoneNumber);
+		void searchContact();
 		void ShowContacts();
+		void SetContact();
 
 };
 
